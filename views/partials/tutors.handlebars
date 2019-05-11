@@ -1,0 +1,27 @@
+<div class="col-lg-8 mb-4">
+{{!-- Author--Jack Zhou --}}
+    <!-- Project Card Example -->
+    <div class="card shadow mb-5 nav-header">
+    
+    <div class="card-body">
+        
+        
+<ul>
+{{#each tutors}}
+<li><a href="/calendar/{{this._id}}">
+{{#if this.profile}}
+{{this.profile.firstname}}  {{this.profile.lastname}}
+{{else}} {{this.username}}
+{{/if}}
+</a></li>
+{{/each}}
+
+    
+</ul>
+        
+    </div>
+    </div>
+
+</div>
+        
+
